@@ -94,6 +94,7 @@
             this.saveButton.TabIndex = 4;
             this.saveButton.Text = "Save";
             this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // deleteButton
             // 
@@ -104,6 +105,7 @@
             this.deleteButton.TabIndex = 5;
             this.deleteButton.Text = "Delete";
             this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // previousNotesLabel
             // 
@@ -119,7 +121,7 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Info;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(602, 106);
             this.dataGridView1.Name = "dataGridView1";
@@ -137,6 +139,7 @@
             this.openNoteButton.TabIndex = 8;
             this.openNoteButton.Text = "Open";
             this.openNoteButton.UseVisualStyleBackColor = true;
+            this.openNoteButton.Click += new System.EventHandler(this.openNoteButton_Click);
             // 
             // uploadButton
             // 
@@ -147,6 +150,7 @@
             this.uploadButton.TabIndex = 9;
             this.uploadButton.Text = "Upload Doc/Img...";
             this.uploadButton.UseVisualStyleBackColor = true;
+            this.uploadButton.Click += new System.EventHandler(this.uploadButton_Click);
             // 
             // newNoteButton
             // 
@@ -157,6 +161,7 @@
             this.newNoteButton.TabIndex = 10;
             this.newNoteButton.Text = "New Note";
             this.newNoteButton.UseVisualStyleBackColor = true;
+            this.newNoteButton.Click += new System.EventHandler(this.newNoteButton_Click);
             // 
             // closeButton
             // 
@@ -167,6 +172,7 @@
             this.closeButton.TabIndex = 11;
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // takerOfNotes
             // 
