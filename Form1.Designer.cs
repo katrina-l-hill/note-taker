@@ -41,7 +41,6 @@
             this.uploadButton = new System.Windows.Forms.Button();
             this.newNoteButton = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
-            this.testButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -169,24 +168,12 @@
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = true;
             // 
-            // testButton
-            // 
-            this.testButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.testButton.Location = new System.Drawing.Point(602, 708);
-            this.testButton.Name = "testButton";
-            this.testButton.Size = new System.Drawing.Size(147, 59);
-            this.testButton.TabIndex = 12;
-            this.testButton.Text = "Test";
-            this.testButton.UseVisualStyleBackColor = true;
-            this.testButton.Click += new System.EventHandler(this.button1_Click);
-            // 
             // takerOfNotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1136, 1218);
-            this.Controls.Add(this.testButton);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.newNoteButton);
             this.Controls.Add(this.uploadButton);
@@ -223,7 +210,6 @@
         private System.Windows.Forms.Button uploadButton;
         private System.Windows.Forms.Button newNoteButton;
         private System.Windows.Forms.Button closeButton;
-        private System.Windows.Forms.Button testButton;
     }
 }
 
