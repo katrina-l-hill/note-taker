@@ -12,6 +12,12 @@ namespace Note_Taking_App
 {
     public partial class takerOfNotes : Form
     {
+        // create a new data table that's globally accessible
+        // acts as the backend for the data grid view for showing the previous notes
+        DataTable notes = new DataTable();
+
+        // keeps track of edits of the notes not actively using
+        bool editing = false;
         public takerOfNotes()
         {
             InitializeComponent();
@@ -38,6 +44,36 @@ namespace Note_Taking_App
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void newNoteButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uploadButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void openNoteButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
         {
 
         }
