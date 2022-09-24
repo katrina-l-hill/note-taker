@@ -25,7 +25,9 @@ namespace Note_Taking_App
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            // ability to edit data table and add a note for each entry
+            notes.Columns.Add("Title");
+            notes.Columns.Add("Note");
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
