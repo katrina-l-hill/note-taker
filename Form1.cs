@@ -28,6 +28,9 @@ namespace Note_Taking_App
             // ability to edit data table and add a note for each entry
             notes.Columns.Add("Title");
             notes.Columns.Add("Note");
+
+            // set data source for the data grid source equal to the data table in the backend
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
