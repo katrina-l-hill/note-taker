@@ -36,12 +36,12 @@
             this.saveButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
             this.previousNotesLabel = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.previousNotes = new System.Windows.Forms.DataGridView();
             this.openNoteButton = new System.Windows.Forms.Button();
             this.uploadButton = new System.Windows.Forms.Button();
             this.newNoteButton = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.previousNotes)).BeginInit();
             this.SuspendLayout();
             // 
             // NoteTitle
@@ -119,16 +119,16 @@
             this.previousNotesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.previousNotesLabel.Click += new System.EventHandler(this.label1_Click);
             // 
-            // dataGridView1
+            // previousNotes
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Info;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(602, 106);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(522, 485);
-            this.dataGridView1.TabIndex = 7;
+            this.previousNotes.BackgroundColor = System.Drawing.SystemColors.Info;
+            this.previousNotes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.previousNotes.Location = new System.Drawing.Point(602, 106);
+            this.previousNotes.Name = "previousNotes";
+            this.previousNotes.RowHeadersWidth = 62;
+            this.previousNotes.RowTemplate.Height = 28;
+            this.previousNotes.Size = new System.Drawing.Size(522, 485);
+            this.previousNotes.TabIndex = 7;
             // 
             // openNoteButton
             // 
@@ -184,7 +184,7 @@
             this.Controls.Add(this.newNoteButton);
             this.Controls.Add(this.uploadButton);
             this.Controls.Add(this.openNoteButton);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.previousNotes);
             this.Controls.Add(this.previousNotesLabel);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.saveButton);
@@ -195,7 +195,7 @@
             this.Name = "takerOfNotes";
             this.Text = "Taker of Notes";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.previousNotes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,7 +211,7 @@
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.Label previousNotesLabel;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView previousNotes;
         private System.Windows.Forms.Button openNoteButton;
         private System.Windows.Forms.Button uploadButton;
         private System.Windows.Forms.Button newNoteButton;
