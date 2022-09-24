@@ -51,7 +51,7 @@
             this.NoteTitle.Name = "NoteTitle";
             this.NoteTitle.Size = new System.Drawing.Size(503, 30);
             this.NoteTitle.TabIndex = 0;
-            this.NoteTitle.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.NoteTitle.TextChanged += new System.EventHandler(this.NoteTitle_TextChanged);
             // 
             // NoteComments
             // 
@@ -61,7 +61,7 @@
             this.NoteComments.Name = "NoteComments";
             this.NoteComments.Size = new System.Drawing.Size(503, 787);
             this.NoteComments.TabIndex = 1;
-            this.NoteComments.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.NoteComments.TextChanged += new System.EventHandler(this.NoteComments_TextChanged);
             // 
             // titleLabel
             // 
@@ -117,7 +117,6 @@
             this.previousNotesLabel.TabIndex = 6;
             this.previousNotesLabel.Text = "Previous Notes:";
             this.previousNotesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.previousNotesLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // previousNotes
             // 
