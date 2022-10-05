@@ -51,7 +51,18 @@ namespace Note_Taking_App
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-
+            if(editing)
+            {
+                notes.Rows[previousNotes.CurrentCell.RowIndex]["Title"] = NoteTitle.Text;
+                notes.Rows[previousNotes.CurrentCell.RowIndex]["Note"] = NoteComments.Text;
+            }
+            else 
+            { 
+                notes.Rows.Add(NoteTitle.Text, NoteComments.Text);
+            }
+            NoteTitle.Text = "";
+            NoteComments.Text = "";
+            editing = false;
         }
 
         private void uploadButton_Click(object sender, EventArgs e)
