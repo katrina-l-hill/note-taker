@@ -90,5 +90,12 @@ namespace Note_Taking_App
         {
 
         }
+
+        private void previousNotes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            NoteTitle.Text = notes.Rows[previousNotes.CurrentCell.RowIndex].ItemArray[0].ToString();
+            NoteComments.Text = notes.Rows[previousNotes.CurrentCell.RowIndex].ItemArray[1].ToString();
+            editing = true;
+        }
     }
 }
