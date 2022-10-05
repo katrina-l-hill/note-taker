@@ -30,7 +30,7 @@ namespace Note_Taking_App
             notes.Columns.Add("Note");
 
             // set data source for the data grid source equal to the data table in the backend
-
+            previousNotes.DataSource = notes; 
         }
 
         private void NoteTitle_TextChanged(object sender, EventArgs e)
@@ -45,7 +45,8 @@ namespace Note_Taking_App
 
         private void newNoteButton_Click(object sender, EventArgs e)
         {
-
+            NoteTitle.Text = "";
+            NoteComments.Text = "";
         }
 
         private void saveButton_Click(object sender, EventArgs e)
@@ -60,7 +61,11 @@ namespace Note_Taking_App
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                notes.Rows[previousNotes.CurrentCell.RowIndex].Delete();
+            }
+            catch(Exception ex) { Console.WriteLine("Not a valid note."); }
         }
 
         private void openNoteButton_Click(object sender, EventArgs e)
