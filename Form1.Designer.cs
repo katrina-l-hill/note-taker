@@ -128,6 +128,7 @@
             this.previousNotes.RowTemplate.Height = 28;
             this.previousNotes.Size = new System.Drawing.Size(522, 485);
             this.previousNotes.TabIndex = 7;
+            this.previousNotes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.previousNotes_CellDoubleClick);
             // 
             // openNoteButton
             // 
