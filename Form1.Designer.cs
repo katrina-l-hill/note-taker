@@ -120,9 +120,10 @@
             // 
             // previousNotes
             // 
+            this.previousNotes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.previousNotes.BackgroundColor = System.Drawing.SystemColors.Info;
             this.previousNotes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.previousNotes.Location = new System.Drawing.Point(602, 106);
+            this.previousNotes.Location = new System.Drawing.Point(602, 115);
             this.previousNotes.Name = "previousNotes";
             this.previousNotes.RowHeadersWidth = 62;
             this.previousNotes.RowTemplate.Height = 28;
